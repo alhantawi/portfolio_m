@@ -10,7 +10,7 @@ const Hero = () => {
     <div className="pb-20 pt-36">
         <div>
          <Spotlight className= "-top-40 -left-10 md:-left-32 md:-top-20 h-screen "fill="purple" />
-         <Spotlight className= "-top-10 -left-full h-screen w-[100vw]"fill="white" />
+         <Spotlight className= "-top-50 -right-80 h-screen translate-x- transform rotate-180  w-[100vw]"fill="white" />
          <Spotlight className= "-top-28 -left-80 h-screen w-[100vw] "fill="blue" />
 
          </div>
@@ -21,23 +21,24 @@ const Hero = () => {
       </div>
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[50vw] flex flex-col items-center justify-center"> 
-        <h2 className=' uppercase tracking-widest text-xs text-center text-blue-100 max-w-80 '>Hi👋, my name is muhammed alhantwi </h2>
+        <h2 className=' uppercase tracking-widest text-5XL text-center text-blue-100 max-w-80 '>Hi👋, my name is Alhantwi </h2> 
+        {/* <p className="text-xl text-center sm:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-8">
+        Hi, my name is Alhantwi
+      </p> */}
         <TextGenerateEffect
-            words="Transforming Concepts into Seamless User Experiences"
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
+            words="Creating Seamless, User-Centric Web Solutions for a Connected World"
+            className="text-center text-[40px] md:text-2xl lg:text-4xl"
           />
-
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Adrian, a Next.js Developer based in Croatia.
-          </p>
-
+            <p>front-end developer , back-end developer, and UI/UX designer</p>
           <a href="#about">
+
             <MagicButton
               title="Show my work"
               icon={<FaLocationArrow />}
               position="right"
             />
           </a>
+        
         </div>
       </div>
     </div>
