@@ -1,8 +1,12 @@
+
+"use client" 
 import React from 'react'
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/text-generate-effect'
 import MagicButton from './ui/MagicButton'
 import { FaLocationArrow } from 'react-icons/fa'
+import Lottie from "lottie-react";
+import hi from "../data/hi.json";
 
 const Hero = () => {
   return (
@@ -21,7 +25,7 @@ const Hero = () => {
       </div>
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[50vw] flex flex-col items-center justify-center"> 
-        <h2 className=' uppercase tracking-widest text-5XL text-center text-blue-100 max-w-80 '>Hi👋, my name is Alhantwi </h2> 
+        <h2 className=' flex justify-start uppercase tracking-widest text-5XL text-center text-blue-100 max-w-80 '><Lottie className='w-6' animationData={hi} loop={true} />  Hello, my name is Alhantwi </h2> 
         {/* <p className="text-xl text-center sm:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-8">
         Hi, my name is Alhantwi
       </p> */}
